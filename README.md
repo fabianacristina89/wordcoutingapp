@@ -1,24 +1,31 @@
-# README
+# Word Counting Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+### How to run this application
 
-* Ruby version
 
-* System dependencies
+#### Using docker compose
+```
+docker-compose up
+```
 
-* Configuration
+#### Using ruby
+```
+bundle install
+rails s
+```
 
-* Database creation
+Then access the page at http://localhost:3000/
 
-* Database initialization
+### Running the tests
 
-* How to run the test suite
+#### Using docker compose
+```
+  docker-compose run web rspec
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### Using ruby
+```
+bundle install
+rspec
+```

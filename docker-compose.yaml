@@ -5,8 +5,8 @@ services:
       context: .
       dockerfile: Dockerfile.dev
     command: bin/rails s -b 0.0.0.0
-    stdin_open: true
-    tty: true
+    # stdin_open: true
+    # tty: true
     volumes:
       - .:/app
     ports:
